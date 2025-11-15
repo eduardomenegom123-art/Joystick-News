@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="paginainicial.css">
+    <link rel="stylesheet" href="novidades.css">
+    
+    
     <title>JoyStick News</title>
 </head>
 
 <body>
-     
 
     <style>
         body {
@@ -17,19 +18,19 @@
         }
     </style>
     <header>
-        <h3>
+        <h3 class="logo">
             <center>JoyStick News</center>
         </h3>
+         </header>
         <nav>
             <nav class="barra">
                 <ul>
-                    <li><a href="noticiascentral.html">Notícias</a></li>
+                    <li><a href="paginainicial.html">Pagina Inicial</a></li>
                     <li><a href="novidades.html">Novidades</a></li>
                     <li><a href="promoções.html">Promoções</a></li>
-                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="noticiascentral.html"> Noticias</a></li>
                 </ul>
             </nav>
-    </header>
     <nav id="sidebar" class="collapsed" id="sidebar_content">
         <div id="user">
             <img src="imagens/desenho miguel.png" id="user_avatar" alt="avatar">
@@ -100,52 +101,78 @@
         </button>
         </div>
     </nav>
-      <script src="noticias.js"></script>
-    <div class="content">
-        <h3>Assista ao trailer de GTA 6</h3>
-        <div class="media-container">
-         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QdBZY2fkU-0?si=m2__BMGobpgT1VxO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="dentro">
+    
+        <div class="retangulo">
+            <center><p><h2 class="tt">NOVIDADES</h2></p></center>
+            
+
+        <h3><p>Novidades dos jogos</p></h3>
+        <div class="atualização">
+            <li><a class="mk1">
+                <img src="mk1ç.webp" width="200" height="200">
+                <h4><p>
+                MK1 traz luta intensa e brutal. <br>
+                </p></h4>
+            </a></li>    
+
+           <li><a class="dt2">
+                <img src="dota.jpg" width="200" height="200">
+                <h4><p>
+                    O evento de Dota foi pura estratégia e hype. <br>
+                </p></h4>
+
+            </a></li>
+           <li><a class="fort">
+                <img src="fortnite.jpg" width="200" height="200">
+                <h4><p>
+                   Fortnite é ação rápida e cheia de emoção. <br>
+                </p></h4>
+            </a></li>
+
+           <li><a class="league">
+                <img src="lol.webp" width="200" height="200">
+                <h4><p>
+                    O evento de LoL foi pura emoção. <br>
+                </p></h4>
+            </a></li>
         </div>
-    </div>
-    <h2>
-        <center>Mapa do GTA 6 vai ser o maior da franquia</center>
-    </h2>
-    <div class="media-wrapper">
-        <div class="media">
-            <center><img src="imagens/download.jpg" alt="Mapa do GTA 6"></center>
+
+            <!--carrossel-->
+              <div class="carrossel-container">
+                    <div class="carrossel">
+                        <div class="slide active">
+                            <img src="cszin.jpg">
+                            <div class="slide-text">
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="lol.webp">
+                            <div class="slide-text">
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="vava.jpg" >
+                            <div class="slide-text">
+                            </div>
+                        </div>
+                    </div>
+                        <!-- Botões de navegação -->
+                        <button class="carrossel-btn prev-btn">&#10094;</button>
+                        <button class="carrossel-btn next-btn">&#10095;</button>
+
+                        <!-- Indicadores -->
+                        <div class="indicadores">
+                            <span class="indicador active" data-index="0"></span>
+                            <span class="indicador" data-index="1"></span>
+                            <span class="indicador" data-index="2"></span>
+                        </div>
+                </div>
+        
         </div>
-    </div>
-    </div>
-    </div>
-    <div class="container">
-        <a href="noticias1.html" class="card-link">
-            <div class="card">
-                <img src="imagens/reequiem.jpg" alt="Resident Evil Requiem">
-                <div class="card-text orange">Resident Evil Requiem</div>
-            </div>
-        </a>
 
-        <a href="noticias2.html" class="card-link">
-            <div class="card">
-                <img src="imagens/bfvi.png" alt="Battlefield VI">
-                <div class="card-text green">Battlefield VI</div>
-            </div>
-        </a>
-
-        <a href="noticias3.html" class="card-link">
-            <div class="card">
-                <img src="imagens/silksong.jpg" alt="Hollow Knight Silksong">
-                <div class="card-text blue">Hollow Knight Silksong</div>
-            </div>
-        </a>
-
-        <a href="noticias4.html" class="card-link">
-            <div class="card">
-                <img src="imagens/Cirilla_The_Witcher_IV.jpg" alt="The Witcher IV">
-                <div class="card-text red">The Witcher IV</div>
-            </div>
-        </a>
-    </div>
+     
+    <!--video da guria-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
     <footer>
         <div id="footer_content">
@@ -154,15 +181,15 @@
                 <P>Sobre nós reporte erros.</P>
 
                 <div id="footer_social_media">
-                    <a href="att.html" class="footer-link" id="instagram">
+                    <a href="imagens/instagram.png" class="footer-link" id="instagram">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
 
-                    <a href="att.html" class="footer-link" id="facebook">
+                    <a href="imagens/facebook.png" class="footer-link" id="facebook">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
 
-                    <a href="att.html" class="footer-link" id="whatsapp">
+                    <a href="imagens/zap.png" class="footer-link" id="whatsapp">
 
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
@@ -173,13 +200,13 @@
                     <h3>Blog</h3>
                 </li>
                 <li>
-                    <a href="att.html" class="footer-link">Tech</a>
+                    <a href="#" class="footer-link">Tech</a>
                 </li>
                 <li>
-                    <a href="att.html" class="footer-link">Adventures</a>
+                    <a href="#" class="footer-link">Adventures</a>
                 </li>
                 <li>
-                    <a href="att.html" class="footer-link">Music</a>
+                    <a href="#" class="footer-link">Music</a>
                 </li>
             </ul>
 
@@ -188,13 +215,13 @@
                     <h3>Products</h3>
                 </li>
                 <li>
-                    <a href="att.html" class="footer-link">App</a>
+                    <a href="#" class="footer-link">App</a>
                 </li>
                 <li>
-                    <a href="att.html" class="footer-link">Desktop</a>
+                    <a href="#" class="footer-link">Desktop</a>
                 </li>
                 <li>
-                    <a href="att.html" class="footer-link">Cloud</a>
+                    <a href="#" class="footer-link">Cloud</a>
                 </li>
             </ul>
 
@@ -221,5 +248,5 @@
         </div>
     </footer>
 </body>
-
+    <script src="promoções.js"></script>
 </html>
