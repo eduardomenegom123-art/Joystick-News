@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JOYSTICK NEWS</title>
+
+  <link rel="stylesheet" href="loginn.css" />
+  <script src="loginn.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+
+</head>
+
+
+<body>
+<header>
+  <h1 class="logo">JoyStick News</h1>
+</header>
+
+<div class="perfil">
+  <button class="perfil-btn" id="perfilToggle">
+  </button>
+</div>
+
+
+        <nav>
+             <nav class="barra">
+                <ul>
+                    <li><a href="paginainicial.html">Pagins Inicial</a></li>
+                    <li><a href="att.html">Novidades</a></li>
+                    <li><a href="promoções.html">Promoções</a></li>
+                    <li><a href="att.html">Eventos</a></li>
+                </ul>
+            </nav>
+
+<main class="centro">
+  <div class="caixa">
+    <div class="abas" role="tablist" aria-label="Acesso">
+      <button id="abaLogin" class="aba ativa" role="tab" aria-selected="true" aria-controls="blocoLogin" type="button">Login</button>
+      <button id="abaCadastro" class="aba" role="tab" aria-selected="false" aria-controls="blocoCadastro" type="button">Cadastro</button>
+    </div>
+
+    <section id="blocoLogin" class="bloco ativo" role="tabpanel" aria-labelledby="abaLogin">
+      <form id="formLogin" novalidate>
+        <label for="logEmail">E-mail</label>
+        <input id="logEmail" name="email" type="email" placeholder="seuemail@exemplo.com" autocomplete="email" required />
+
+        <label for="logSenha">Senha</label>
+        <input id="logSenha" name="senha" type="password" placeholder="mín. 6 caracteres" minlength="6" autocomplete="current-password" required />
+
+        <button class="btn" type="submit">Entrar</button>
+        <p id="msgLogin" class="msg" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="blocoCadastro" class="bloco" role="tabpanel" aria-labelledby="abaCadastro" hidden>
+      <form id="formCadastro" novalidate>
+        <label for="cadNome">Nome</label>
+        <input id="cadNome" name="nome" type="text" placeholder="Seu nome" required />
+
+        <label for="cadEmail">E-mail</label>
+        <input id="cadEmail" name="email" type="email" placeholder="seuemail@exemplo.com" autocomplete="email" required />
+
+        <label for="cadSenha">Senha</label>
+        <input id="cadSenha" name="senha" type="password" placeholder="mín. 6 caracteres" minlength="6" autocomplete="new-password" required />
+
+        <label for="cadConfirma">Confirmar senha</label>
+        <input id="cadConfirma" name="confirma" type="password" placeholder="repita a senha" minlength="6" autocomplete="new-password" required />
+
+        <button class="btn" type="submit">Criar conta</button>
+        <p id="msgCadastro" class="msg" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </div>
+</main>
+
+
+<footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Joystick News</h1>
+                <P>Sobre nós reporte erros.</P>
+
+                <div id="footer_social_media">
+                    <a href="att.html" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="att.html" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="att.html" class="footer-link" id="whatsapp">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="att.html" class="footer-link">Tech</a>
+                </li>
+                <li>
+                    <a href="att.html" class="footer-link">Adventures</a>
+                </li>
+                <li>
+                    <a href="att.html" class="footer-link">Music</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Products</h3>
+                </li>
+                <li>
+                    <a href="att.html" class="footer-link">App</a>
+                </li>
+                <li>
+                    <a href="att.html" class="footer-link">Desktop</a>
+                </li>
+                <li>
+                    <a href="att.html" class="footer-link">Cloud</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Subscribe</h3>
+
+                <p>
+                    Insira seu e-mail para receber notificações sobre nossas novidades
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2025 all rights reserved
+        </div>
+    </footer>
+</body>
+</html>
